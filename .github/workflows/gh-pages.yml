@@ -7,9 +7,10 @@ on:
   workflow_dispatch:
     branches:
     - main
-  repository_dispatch:
-    types:
-      - webhook
+  release:
+    branches:
+    - main
+
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
